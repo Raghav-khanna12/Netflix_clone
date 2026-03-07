@@ -1,0 +1,19 @@
+:root {
+  color-scheme: dark;
+  --bg: #0d0d0d;
+  --text: #ffffff;
+  --muted: #d4d4d4;
+  --accent: #e50914;
+  --panel: #1b1b1b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
