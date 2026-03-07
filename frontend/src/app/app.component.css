@@ -1,0 +1,117 @@
+.top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.logo {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.sign-in-btn {
+  background: var(--accent);
+  border: none;
+  color: white;
+  padding: 0.55rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+  padding: 8rem 1rem 4rem;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1700&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 760px;
+  z-index: 1;
+}
+
+.hero h2 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 800;
+}
+
+.hero p {
+  margin: 0 0 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: var(--muted);
+}
+
+.cta-form {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-form input {
+  width: min(420px, 85vw);
+  border: 1px solid #666;
+  border-radius: 5px;
+  padding: 0.9rem 0.85rem;
+  font-size: 1rem;
+  color: #fff;
+  background: rgba(30, 30, 30, 0.85);
+}
+
+.cta-form button {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.9rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-message {
+  min-height: 1.2em;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .top-nav {
+    padding-inline: 1rem;
+  }
+}

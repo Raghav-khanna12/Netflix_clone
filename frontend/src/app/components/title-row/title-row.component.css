@@ -1,0 +1,49 @@
+.row-section {
+  padding: 1rem 2.5rem 2rem;
+}
+
+.row-section h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1.4rem;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  min-height: 250px;
+  background: var(--panel);
+  transition: transform 160ms ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.6rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .row-section {
+    padding-inline: 1rem;
+  }
+}

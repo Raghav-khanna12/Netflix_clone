@@ -1,0 +1,30 @@
+<header class="top-nav">
+  <h1 class="logo">NETFLIX</h1>
+  <button class="sign-in-btn" type="button">Sign In</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Unlimited movies, TV shows, and more.</h2>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <form class="cta-form" (ngSubmit)="onSubmit()">
+        <label for="emailInput" class="sr-only">Email address</label>
+        <input
+          id="emailInput"
+          type="email"
+          name="email"
+          placeholder="Email address"
+          [(ngModel)]="email"
+          required
+        />
+        <button type="submit">Get Started</button>
+      </form>
+      <p class="form-message" aria-live="polite">{{ formMessage }}</p>
+    </div>
+  </section>
+
+  <app-title-row [heading]="'Trending Now'" [titles]="trendingTitles"></app-title-row>
+  <app-title-row [heading]="'Popular on Netflix'" [titles]="popularTitles"></app-title-row>
+</main>

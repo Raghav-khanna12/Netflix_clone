@@ -1,0 +1,9 @@
+<section class="row-section">
+  <h3>{{ heading }}</h3>
+  <div class="card-row">
+    <article class="card" *ngFor="let item of titles">
+      <img [src]="item.imageUrl" [alt]="item.title + ' poster'" loading="lazy" />
+      <span>{{ item.title }}</span>
+    </article>
+  </div>
+</section>
